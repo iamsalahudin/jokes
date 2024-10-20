@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(https://img.freepik.com/premium-photo/funny-backgrounds-funny-illustrated-faces_860599-18196.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background-color: #2c272b;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 20px;
+            width: 40%;
+            height: 60%;
+            color: white;
+            padding: 20px;
+        }
+
+        #facts {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        .container p {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        #jokebtn {
+            background-color: orangered;
+            color: #fff;
+            padding: 10px;
+            font-size: 20px;
+            border: none;
+            border-radius: 20px;
+        }
+
+        @media screen and (max-width: 500px) {
+            .container {
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="facts">Joke</h2>
+        <p id="ques">Click the button</p>
+        <p id="ans">For the Joke</p>
+        <button id="jokebtn">Get New Joke</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
